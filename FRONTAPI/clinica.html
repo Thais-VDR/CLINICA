@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/clinica.css">
+  <title>SAÚDE EM FOCO</title>
+</head>
+
+<body>
+  <nav class="navbar bg-primary fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand">CLÍNICA SAÚDE EM FOCO</a>
+    </div>
+  </nav>
+  <br>
+  <main>
+    <div class="container">
+      <h2 class="titulo">Agendamento</h2>
+    </div>
+    <section class="container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome do Paciente</th>
+            <th>Médico</th>
+            <th>Data</th>
+            <th>Horário</th>
+            <th>Ações</th>
+          </tr>
+        </thead>
+        <tbody id="tabela-pacientes"></tbody>
+      </table>
+    </section>
+  </main>
+  <h2 class="adicionar">NOVA CONSULTA</h2>
+  <div class="container-card">
+    <div class="row">
+      <div class="col-6">
+        <div class="card">
+          <div class="card-body">
+            <form id="clinica">
+              <div class="form-group">
+                <label>Nome:</label>
+                <input class="form-control" type="text" name="nome_paciente" id="nomeInput" placeholder="Digite o seu nome">
+              </div>
+              <div class="form-group">
+                <label>Médico:</label>
+                <input class="form-control" type="text" name="medico" id="medicoInput" placeholder="Digite o Nº do quarto">
+              </div>
+              <div class="form-group">
+                <label>Data de Agendamento:</label>
+                <input class="form-control" name="data" type="number" id="dataInput"
+                  placeholder="Digite a Data de Agendamento">
+              </div>
+              <div class="form-group">
+                <label>Horário de Agendamento:</label>
+                <input class="form-control" type="time" name="hora" id="horaInput"
+                  placeholder="Digite o seu Horário de Agendamento">
+                <div class="form-group text-center">
+                  <br>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
